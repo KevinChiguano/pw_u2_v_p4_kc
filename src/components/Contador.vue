@@ -1,9 +1,9 @@
 <template>
   <h3>{{ tituloComponente }}</h3>
-  <h3>{{ titulo }}</h3>
-  <p>{{ numero }} <sup>2</sup>={{ obtenerCuadradoComputado }}</p>
-  <p>{{ numero }} <sup>2</sup>={{ obtenerCuadradoComputado }}</p>
-  <p>{{ numero }} <sup>2</sup>={{ obtenerCuadradoComputado }}</p>
+  <h3>{{ valor2 }}</h3>
+  <p>{{ numero }} <sup>2</sup>={{obtenerCuadradoComputado}}</p>
+  <p>{{ numero }} <sup>2</sup>={{obtenerCuadradoComputado}}</p>
+  <p>{{ numero }} <sup>2</sup>={{obtenerCuadradoComputado}}</p>
   <button type="button" v-on:click="suma()">+</button>
   <button v-on:click="resta()">-</button>
 </template>
@@ -23,15 +23,15 @@ export default {
       return this.numero * this.numero;
     },
     suma(){
-        this.numero= this.numero+1;
+        this.numero+=1;
     },
     resta(){
-        this.numero= this.numero-1;
+        this.numero-=1;
     }
   },
     computed:{
         obtenerCuadradoComputado(){
-            console.log("Entro al metodo cuadrado")
+            console.log("Entro al metodo cuadrado computado")
             return this.numero*this.numero
         }
     },
