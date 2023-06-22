@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <Calculadora></Calculadora>
+  <Contador titulo="Estudiante" v-bind:inicio="400+2"/>
+  <Contador titulo="Profesor" :inicio="101"/>
   
 </template>
 
@@ -12,7 +13,8 @@ import Calculadora from './components/Calculadora.vue'
 export default {
   name: 'App',
   components: {
-    Calculadora
+    Calculadora,
+    Contador
   }
 }
 </script>
