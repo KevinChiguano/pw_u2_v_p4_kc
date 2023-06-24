@@ -31,6 +31,8 @@ export default {
       console.log(oldValue);
       if (value.includes("?")) {
         console.log("Consumir el API");
+        this.pregunta = ""
+        this.respuesta = "Esperando espere por favor"
         this.consumirAPI();
       }
     },
