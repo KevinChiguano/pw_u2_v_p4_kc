@@ -1,5 +1,6 @@
 <template>
-  <PokemonPages/>
+  <!--<PokemonPages/>-->
+  <Juego/>
 </template>
 
 <script>
@@ -11,10 +12,14 @@ import CaracolaMagica from './components/CaracolaMagica.vue';
 
 import PokemonPages from './modules/pokemon/pages/PokemonPages.vue';
 
+
+import Juego from './modules/juego/components/Juego.vue';
+
 export default {
   name: 'App',
   components: {
-    PokemonPages
+    PokemonPages,
+    Juego
   }
 }
 </script>
