@@ -56,7 +56,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 img, .bg-dark {
   height: 100vh;
   width: 100vw;
