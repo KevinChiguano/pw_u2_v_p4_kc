@@ -1,7 +1,7 @@
 <template>
   <div class="contenedor-opciones">
     <ul>
-    <li v-for="pokemon in opciones" :key="pokemon.id">{{ pokemon.nombre }}</li>
+    <li v-for="pokemon in opciones" :key="pokemon.id" @click="$emit('seleccionado',pokemon.id)">{{ pokemon.nombre }}</li>
   </ul>
 
   </div>
@@ -14,6 +14,12 @@ export default {
     opciones:{
       type:Array,
       required:true
+    }
+  },
+
+  methods:{
+    pruebaDeEvento(){
+      console.log("Prueba de evento")
     }
   }
 
