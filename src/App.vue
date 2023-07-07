@@ -1,5 +1,6 @@
 <template>
-  <PokemonPages/>
+  <NavBar/>
+  <router-view/>
 </template>
 
 <script>
@@ -7,14 +8,15 @@
 import Contador from './components/Contador.vue'
 import Calculadora from './components/Calculadora.vue'
 import CaracolaMagica from './components/CaracolaMagica.vue';
-
-
 import PokemonPages from './modules/pokemon/pages/PokemonPages.vue';
+
+import NavBar from './modules/pokemon/components/NavBar.vue';
+
 
 export default {
   name: 'App',
   components: {
-    PokemonPages
+    NavBar
   }
 }
 </script>
