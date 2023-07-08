@@ -1,17 +1,16 @@
 <template>
-  <NavBar/>
-  <router-view/>
+  <div id="app">
+    <NavBar/>
+    <router-view/>
+  </div>
 </template>
 
 <script>
-
 import Contador from './components/Contador.vue'
 import Calculadora from './components/Calculadora.vue'
 import CaracolaMagica from './components/CaracolaMagica.vue';
 import PokemonPages from './modules/pokemon/pages/PokemonPages.vue';
-
 import NavBar from './modules/pokemon/components/NavBar.vue';
-
 
 export default {
   name: 'App',
@@ -29,5 +28,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #FFCB05; /* Fondo de color amarillo */
 }
 </style>

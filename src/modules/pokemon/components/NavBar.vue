@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <router-link to="/">Bienvenida</router-link>
-    <router-link to="/juego">Juego</router-link>
-    <router-link to="/premios">Premios</router-link>
-    <router-link to="/pokemon">Pokemon</router-link>
+  <div class="navigation">
+    <router-link to="/" class="nav-link">Bienvenida</router-link>
+    <router-link to="/juego" class="nav-link">Juego</router-link>
+    <router-link to="/premios" class="nav-link">Premios</router-link>
+    <router-link to="/pokemon" class="nav-link">Pokémon</router-link>
   </div>
 </template>
 
@@ -14,15 +14,20 @@ export default {
 </script>
 
 <style scoped>
-
-div{
-    padding: 0 30px;
+.navigation {
+  background-color: #ffcccc; /* Fondo de color rojo suave */
+  padding: 10px 30px;
+  text-align: center;
 }
 
-div a{
-    font-weight: bold;
-    color: #2c3e50;
-    margin: 0 10px;
+.nav-link {
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
+.nav-link:hover {
+  color: #ff0000; /* Cambio de color al pasar el cursor */
+}
 </style>
